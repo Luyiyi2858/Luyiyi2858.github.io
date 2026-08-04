@@ -19,12 +19,11 @@ body,
   --md-primary-fg-color: #FFB6C1;
 }
 
-/* 网站名称：白色 + 加粗 + 字号加大 */
+/* 网站名称：白色 + 加粗 */
 .md-header__title,
 .md-header__topic {
   color: #ffffff;
   font-weight: bold !important;
-  font-size: 1.15rem;
 }
 
 /* 导航栏图标：白色 */
