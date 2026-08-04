@@ -1,29 +1,36 @@
-/* 全局字体改为宋体 */
+/* 全局字体：英文/数字用 Times New Roman，中文用宋体 */
 body,
 .md-typeset {
-  font-family: "SimSun", "宋体", serif !important;
+  font-family: "Times New Roman", "SimSun", "宋体", serif !important;
 }
 
-/* 导航栏改成浅粉色 */
+/* 顶部主导航栏：浅粉色 */
 .md-header {
   background-color: #FFB6C1 !important;
 }
 
-/* 网站名称：白色 */
+/* 顶部标签导航栏也改成浅粉色 */
+.md-tabs {
+  background-color: #FFB6C1 !important;
+}
+
+/* 网站名称：白色 + 加粗 */
 .md-header__title,
 .md-header__topic {
   color: #ffffff;
+  font-weight: bold !important;
 }
 
-/* 导航栏图标也改成白色 */
+/* 导航栏图标：白色 */
 .md-header__button svg {
   color: #ffffff;
 }
 
-/* 顶部导航标签文字颜色 */
+/* 顶部导航标签文字：加粗 */
 .md-tabs__link,
 .md-tabs__link--active {
   color: #4a4a4a;
+  font-weight: bold !important;
 }
 
 .md-tabs__link:hover {
