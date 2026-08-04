@@ -1,7 +1,7 @@
-/* 全局字体：英文/数字用 Times New Roman，中文用宋体 */
+/* 全局字体：宋体 */
 body,
 .md-typeset {
-  font-family: "Times New Roman", "SimSun", "宋体", serif !important;
+  font-family: "SimSun", "宋体", serif !important;
 }
 
 /* 顶部主导航栏：浅粉色 */
@@ -19,11 +19,12 @@ body,
   --md-primary-fg-color: #FFB6C1;
 }
 
-/* 网站名称：白色 + 加粗 */
+/* 网站名称：白色 + 加粗 + 字号加大 */
 .md-header__title,
 .md-header__topic {
   color: #ffffff;
   font-weight: bold !important;
+  font-size: 1.15rem;
 }
 
 /* 导航栏图标：白色 */
