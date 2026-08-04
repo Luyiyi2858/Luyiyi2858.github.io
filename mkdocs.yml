@@ -2,6 +2,8 @@ site_name: 路依依的随心记
 theme:
   name: material
   language: zh
+  features:
+    - navigation.tabs
 
 extra_css:
   - stylesheets/extra.css
@@ -11,5 +13,6 @@ nav:
   - 课程:
       - 课程首页: course/index.md
       - 示例文档: course/example.md
-  - 友链: friends/index.md
+  - Apex: apex/index.md
   - 关于: about/index.md
+  - 友链: friends/index.md
