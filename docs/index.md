@@ -2,7 +2,8 @@
 hide:
   - toc
   - navigation
-body_class: home-page
+cssclasses:
+  - home-page
 ---
 
 # 路依依的随心记
