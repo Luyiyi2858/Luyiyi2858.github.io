@@ -1,0 +1,30 @@
+/* 导航栏改成浅粉色 */
+.md-header {
+  background-color: #FFB6C1 !important;
+}
+
+/* 网站名称：白色 */
+.md-header__title,
+.md-header__topic {
+  color: #ffffff;
+}
+
+/* 导航栏图标也改成白色 */
+.md-header__button svg {
+  color: #ffffff;
+}
+
+/* 导航标签文字颜色 */
+.md-tabs__link,
+.md-tabs__link--active {
+  color: #4a4a4a;
+}
+
+.md-tabs__link:hover {
+  color: #222;
+}
+
+/* 搜索框适配浅色背景 */
+.md-search__input {
+  background-color: rgba(255, 255, 255, 0.6);
+}

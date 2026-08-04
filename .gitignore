@@ -1,0 +1,16 @@
+# MkDocs 构建产物（自动生成的网站文件）
+site/
+
+# Python 缓存
+__pycache__/
+
+# 虚拟环境
+venv/
+.venv/
+
+# WorkBuddy 项目数据
+.workbuddy/
+
+# IDE 文件
+.vscode/
+.idea/
