@@ -2,6 +2,7 @@ site_name: 路依依的随心记
 theme:
   name: material
   language: zh
+  logo: logo.png
   features:
     - navigation.tabs
 
