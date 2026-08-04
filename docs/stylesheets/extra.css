@@ -48,15 +48,19 @@ body,
 }
 
 /* 主页居中样式 */
-article.home-page {
+.home-title {
+  display: block;
+  font-size: 2.5rem;
   text-align: center;
   margin-top: 120px;
+  margin-bottom: 0;
 }
-article.home-page p {
+.home-subtitle,
+.home-body {
+  display: block;
+  text-align: center;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
-}
-article.home-page h1 {
-  font-size: 2.5rem;
+  margin-top: 30px;
 }
