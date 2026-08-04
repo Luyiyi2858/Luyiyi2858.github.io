@@ -1,3 +1,9 @@
+/* 全局字体改为宋体 */
+body,
+.md-typeset {
+  font-family: "SimSun", "宋体", serif !important;
+}
+
 /* 导航栏改成浅粉色 */
 .md-header {
   background-color: #FFB6C1 !important;
@@ -14,7 +20,7 @@
   color: #ffffff;
 }
 
-/* 导航标签文字颜色 */
+/* 顶部导航标签文字颜色 */
 .md-tabs__link,
 .md-tabs__link--active {
   color: #4a4a4a;
