@@ -30,11 +30,10 @@
 
 ## 致谢
 
-!!! quote “本网站的建立离不开各位大佬的影响”
+!!! quote "本网站的建立离不开各位大佬的影响"
 
-[Savia的外装袋脑](https://savia7582.github.io/Exterior/)——大跌伟大无需多言！大跌的光芒会驱散每名大一工科新生脑中的迷雾，什么微积分什么大物，看我一个大跌讲义飞过去......
+    [Savia的外装袋脑](https://savia7582.github.io/Exterior/)——大跌伟大无需多言！大跌的光芒会驱散每名大一工科新生脑中的迷雾，什么微积分什么大物，看我一个大跌讲义飞过去......
 
-[Alight“写给零代码基础同学的个人网站建站指南”](https://www.cc98.org/topic/6588970)&[Paradox“从Word、MarkDown到Latex，打造最优雅的写作方式”](https://zju-paradox.top/Latex/)——感谢大佬们的帖子和网站，激发我利用Agent创建了这个网站，也教会我如何使用Markdown格式打文字。
+    [Alight"写给零代码基础同学的个人网站建站指南"](https://www.cc98.org/topic/6588970)&[Paradox"从Word、MarkDown到Latex，打造最优雅的写作方式"](https://zju-paradox.top/Latex/)——感谢大佬们的帖子和网站，激发我利用Agent创建了这个网站，也教会我如何使用Markdown格式打文字。
 
-感谢各位前辈和大佬们的无私。
-
+    感谢各位前辈和大佬们的无私。
