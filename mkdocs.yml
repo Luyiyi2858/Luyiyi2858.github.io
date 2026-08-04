@@ -9,7 +9,8 @@ markdown_extensions:
   - meta
   - admonition
   - pymdownx.superfences
-  - pymdownx.tilde
+  - pymdownx.tilde:
+      subscript: false
 
 extra_css:
   - stylesheets/extra.css
