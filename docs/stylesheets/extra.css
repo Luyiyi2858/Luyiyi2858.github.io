@@ -50,9 +50,17 @@ body,
 /* 表格行：浅粉与白色相间 */
 .md-typeset table:not([class]) tbody tr:nth-child(odd),
 .md-typeset table:not([class]) tr:nth-child(odd) {
-  background-color: #FFB6C1;
+  background-color: #FFE4EC;
 }
 .md-typeset table:not([class]) tbody tr:nth-child(even),
 .md-typeset table:not([class]) tr:nth-child(even) {
   background-color: #ffffff;
+}
+/* 表格边框加粗 */
+.md-typeset table:not([class]) {
+  border: 2px solid #ddd;
+}
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  border: 2px solid #ddd;
 }
