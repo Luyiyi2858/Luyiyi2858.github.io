@@ -9,9 +9,12 @@ body,
   background-color: #FFB6C1 !important;
 }
 
-/* 顶部标签导航栏也改成浅粉色 */
-.md-tabs {
+/* 顶部标签导航栏也改成浅粉色 - 用变量+直接颜色双保险 */
+.md-tabs,
+.md-tabs__list {
   background-color: #FFB6C1 !important;
+  --md-tabs-bg-color: #FFB6C1 !important;
+  background: #FFB6C1 !important;
 }
 
 /* 网站名称：白色 + 加粗 */
@@ -28,7 +31,7 @@ body,
 
 /* 顶部导航标签文字：加粗 */
 .md-tabs__link,
-.md-tabs__link--active {
+.md-tabs__link--link {
   color: #4a4a4a;
   font-weight: bold !important;
 }
