@@ -10,7 +10,7 @@ markdown_extensions:
   - admonition
   - pymdownx.superfences
   - pymdownx.tilde:
-      strikethrough: true
+      smart_delete: false
       subscript: false
 
 extra_css:
