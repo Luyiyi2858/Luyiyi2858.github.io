@@ -1,0 +1,40 @@
+name: 部署到 GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+# 允许工作流写入仓库内容（用于推送到 gh-pages 分支）
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 第一步：拉取代码
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      # 第二步：安装 Python
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # 第三步：安装 mkdocs-material
+      - name: 安装依赖
+        run: pip install mkdocs-material
+
+      # 第四步：构建网站
+      - name: 构建网站
+        run: mkdocs build
+
+      # 第五步：部署到 gh-pages 分支
+      - name: 部署到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
