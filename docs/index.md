@@ -1,14 +1,9 @@
-<style>
-  /* 让正文居中 */
-  .center-content {
-    text-align: center;
-    margin-top: 150px;
-  }
-  /* 拉宽一点 */
-  .center-content p { max-width: 700px; margin-left: auto; margin-right: auto; }
-</style>
-
-<div class="center-content" markdown="1">
+---
+hide:
+  - toc
+  - navigation
+body_class: home-page
+---
 
 # 路依依的随心记
 
@@ -22,5 +17,3 @@
 
 !!! question "2026.8.4"
     - 网站创建
-
-</div>

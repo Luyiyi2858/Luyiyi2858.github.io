@@ -5,6 +5,9 @@ theme:
   features:
     - navigation.tabs
 
+markdown_extensions:
+  - meta
+
 extra_css:
   - stylesheets/extra.css
 
