@@ -3,6 +3,7 @@ theme:
   name: material
   language: zh
   logo: logo.png
+  favicon: favicon.png
   features:
     - navigation.tabs
 
