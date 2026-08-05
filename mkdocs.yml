@@ -24,5 +24,6 @@ nav:
       - 课程首页: course/index.md
       - 示例文档: course/example.md
   - Apex: apex/index.md
+  - 杂记: zaji/index.md
   - 关于: about/index.md
   - 友链: friends/index.md
