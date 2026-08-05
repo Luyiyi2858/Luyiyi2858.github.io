@@ -23,7 +23,9 @@ nav:
   - 课程:
       - 课程首页: course/index.md
       - 示例文档: course/example.md
-  - Apex: apex/index.md
+  - Apex:
+      - Apex首页: apex/index.md
+      - 游玩日记: apex/diary.md
   - 杂记:
       - 杂记首页: zaji/index.md
       - 宜州: zaji/Yizhou.md
