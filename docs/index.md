@@ -16,6 +16,20 @@
     - 增加「游玩日记」板块
     - 站点配置调整
 
+---
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div style="text-align: center; color: #999; margin-top: 40px;">
+  <span id="busuanzi_container_site_pv" style="display: none;">
+    累计被访问 <span id="busuanzi_value_site_pv" style="font-weight: bold; color: #FFB6C1;"></span> 次
+    &nbsp;|&nbsp;
+  </span>
+  <span id="busuanzi_container_site_uv" style="display: none;">
+    <span id="busuanzi_value_site_uv" style="font-weight: bold; color: #FFB6C1;"></span> 人来过
+  </span>
+</div>
+
 
 
 
