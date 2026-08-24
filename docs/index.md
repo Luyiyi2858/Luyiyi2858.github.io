@@ -16,6 +16,9 @@
     - 增加「游玩日记」板块
     - 站点配置调整
 
+!!! question "2026.8.24"
+    - 将「Apex」删除，添加「资源」板块
+
 ---
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -25,7 +28,6 @@
   &nbsp;|&nbsp;
   访客数 <span id="busuanzi_value_site_uv" style="font-weight: bold; color: #FFB6C1;">加载中...</span> 人
 </div>
-
 
 
 
