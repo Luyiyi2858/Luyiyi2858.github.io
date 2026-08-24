@@ -823,88 +823,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ai" class="md-nav__link">
+  <a href="#skill" class="md-nav__link">
     <span class="md-ellipsis">
       
-        附：AI 速查版配置手册
+        附：完整 SKILL 原文件
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="附：AI 速查版配置手册">
+    <nav class="md-nav" aria-label="附：完整 SKILL 原文件">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        目标
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        原理速记
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#zju-connect_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        一、zju-connect 配置
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#clash-verge-rev_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        二、Clash Verge Rev 分流配置
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        三、常见坑
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        四、Windows 守护进程（开机自启 + 崩溃重启）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        验证
+        文件内容（原样展示）
       
     </span>
   </a>
@@ -1342,88 +1276,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ai" class="md-nav__link">
+  <a href="#skill" class="md-nav__link">
     <span class="md-ellipsis">
       
-        附：AI 速查版配置手册
+        附：完整 SKILL 原文件
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="附：AI 速查版配置手册">
+    <nav class="md-nav" aria-label="附：完整 SKILL 原文件">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
-        目标
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        原理速记
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#zju-connect_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        一、zju-connect 配置
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#clash-verge-rev_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        二、Clash Verge Rev 分流配置
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        三、常见坑
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        四、Windows 守护进程（开机自启 + 崩溃重启）
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        验证
+        文件内容（原样展示）
       
     </span>
   </a>
@@ -1648,25 +1516,36 @@
 </tbody>
 </table>
 <hr />
-<h2 id="ai">附：AI 速查版配置手册</h2>
+<h2 id="skill">附：完整 SKILL 原文件</h2>
 <blockquote>
-<p>以下是给 AI 助手看的精简版配置手册，包含一些补充细节，可作为正文的快速索引。</p>
+<p>以下是 AI 版 SKILL 原文件的<strong>完整内容</strong>（含头部元信息），可直接复制使用，也可以点击下方按钮直接下载。</p>
 </blockquote>
-<h3 id="_9">目标</h3>
-<p>在校外同时实现「访问校内资源」+「科学上网」，两者互不干扰。核心：zju-connect 只当本地 SOCKS5 节点，Clash Verge 当唯一代理入口，用分流规则把校网流量导给 zju-connect、外网流量走机场。</p>
-<h3 id="_10">原理速记</h3>
-<ul>
-<li>zju-connect 是浙大 RVPN 的开源客户端，负责从校外穿透回校内（10.0.0.0/8 内网）。</li>
-<li>Clash Verge 负责系统代理 + 分流。校网域名/IP → zju-connect 节点；其余 → 机场/直连。</li>
-</ul>
-<h3 id="zju-connect_1">一、zju-connect 配置</h3>
-<p><strong>下载</strong></p>
-<ul>
-<li>GUI 版：<code>ZJU Connect for Windows</code>（内含 <code>zju-connect.exe</code> 引擎，可直接命令行调用）。</li>
-<li>纯命令行：github.com/mythologyli/zju-connect 的 Release。</li>
-</ul>
-<p><strong>config.toml 关键项</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"学号"</span>
+<p><a href="zju-connect-clash-setup-AI版SKILL.txt" download style="display:inline-block;background-color:#FFB6C1;color:#ffffff;padding:10px 28px;border-radius:8px;font-weight:bold;text-decoration:none;">⬇ 下载 SKILL 原文件</a></p>
+<h3 id="_9">文件内容（原样展示）</h3>
+<div class="highlight"><pre><span></span><code>---
+name: zju-connect-clash-setup
+description: 浙江大学校外访问校内资源（CC98、图书馆数据库、教务网等）与科学上网共存的智能分流配置，基于 zju-connect（aTrust 协议）+ Clash Verge Rev。触发词：zju-connect、浙大校网、校内资源、CC98、Clash 分流、RVPN、aTrust、校外访问、校园网 VPN。
+<span class="gu">agent_created: true</span>
+<span class="gu">---</span>
+
+<span class="gh"># 浙大 zju-connect + Clash Verge 智能分流配置</span>
+
+<span class="gu">## 目标</span>
+在校外同时实现「访问校内资源」+「科学上网」，两者互不干扰。核心：zju-connect 只当本地 SOCKS5 节点，Clash Verge 当唯一代理入口，用分流规则把校网流量导给 zju-connect、外网流量走机场。
+
+<span class="gu">## 原理速记</span>
+<span class="k">-</span><span class="w"> </span>zju-connect 是浙大 RVPN 的开源客户端，负责从校外穿透回校内（10.0.0.0/8 内网）。
+<span class="k">-</span><span class="w"> </span>Clash Verge 负责系统代理 + 分流。校网域名/IP → zju-connect 节点；其余 → 机场/直连。
+
+<span class="gu">## 一、zju-connect 配置</span>
+
+<span class="gu">### 下载</span>
+<span class="k">-</span><span class="w"> </span>GUI 版：`ZJU Connect for Windows`（内含 <span class="sb">`zju-connect.exe`</span> 引擎，可直接命令行调用）。
+<span class="k">-</span><span class="w"> </span>纯命令行：github.com/mythologyli/zju-connect 的 Release。
+
+<span class="gu">### config.toml 关键项</span>
+<span class="sb">```toml</span>
+<span class="n">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"学号"</span>
 <span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"上网账号密码"</span><span class="w">          </span><span class="c1"># 含 ! # 等特殊字符时用单引号包裹</span>
 <span class="n">protocol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"atrust"</span><span class="w">               </span><span class="c1"># 必须 atrust（新协议）</span>
 <span class="n">graph_code_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="w">              </span><span class="c1"># 留空=弹浏览器点选验证码（推荐）；填路径=存图+手动 JSON（麻烦）</span>
@@ -1674,25 +1553,28 @@
 <span class="n">server_address</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"vpn.zju.edu.cn"</span>
 <span class="n">server_port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">443</span>
 <span class="n">socks_bind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">":21080"</span><span class="w">             </span><span class="c1"># 记住这个端口，Clash 节点要用</span>
-</code></pre></div>
-<p><strong>启动（Windows PowerShell）</strong></p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd </span><span class="p">&lt;</span><span class="n">zju-connect目录</span><span class="p">&gt;</span>
+<span class="sb">```</span>
+
+<span class="gu">### 启动（Windows PowerShell）</span>
+<span class="sb">```powershell</span>
+<span class="nb">cd </span><span class="p">&lt;</span><span class="n">zju-connect目录</span><span class="p">&gt;</span>
 <span class="p">.\</span><span class="n">zju-connect</span><span class="p">.</span><span class="n">exe</span> <span class="n">-config</span> <span class="p">&lt;</span><span class="n">config</span><span class="p">.</span><span class="n">toml路径</span><span class="p">&gt;</span>
-</code></pre></div>
-<p><strong>关键点</strong></p>
-<ul>
-<li>账号密码 = <strong>上网账号</strong>（在 <code>myvpn.zju.edu.cn</code> 激活），不是统一身份认证密码、不是校园卡密码。</li>
-<li>浙大自 2025-05 起 RVPN 已迁移到 aTrust（<code>vpn.zju.edu.cn</code>），旧 <code>rvpn.zju.edu.cn</code> 大量端口被关，旧教程易失效。</li>
-<li>首次登录需：图形验证码 + 短信验证码；成功后生成 <code>clientData.json</code>，<strong>日常启动免验证码</strong>。仅当凭证过期、更换设备/登录地点、或 <code>clientData.json</code> 被删时才需重新验证。</li>
-<li>验证码若卡在 <code>Please enter the graph check code JSON</code>，把 <code>graph_code_file</code> 改成空串，重启后弹浏览器点选，比手动算坐标粘 JSON 简单得多。</li>
-</ul>
-<h3 id="clash-verge-rev_1">二、Clash Verge Rev 分流配置</h3>
-<blockquote>
-<p>原版 Clash Verge 已停维护、删了 prepend 功能；务必用 <strong>Clash Verge Rev</strong>（Mihomo 内核）。</p>
-</blockquote>
-<p><strong>1. 全局扩展脚本（翻译 prepend-* 键，必须装）</strong></p>
-<p>位置：订阅页底部「全局扩展脚本」卡片 → Script。整段替换默认模板：</p>
-<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">main</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span><span class="w"> </span><span class="nx">profileName</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="sb">```</span>
+
+<span class="gu">### 关键点</span>
+<span class="k">-</span><span class="w"> </span>账号密码 = <span class="gs">**上网账号**</span>（在 <span class="sb">`myvpn.zju.edu.cn`</span> 激活），不是统一身份认证密码、不是校园卡密码。
+<span class="k">-</span><span class="w"> </span>浙大自 2025-05 起 RVPN 已迁移到 aTrust（`vpn.zju.edu.cn`），旧 <span class="sb">`rvpn.zju.edu.cn`</span> 大量端口被关，旧教程易失效。
+<span class="k">-</span><span class="w"> </span>首次登录需：图形验证码 + 短信验证码；成功后生成 <span class="sb">`clientData.json`</span>，<span class="gs">**日常启动免验证码**</span>。仅当凭证过期、更换设备/登录地点、或 <span class="sb">`clientData.json`</span> 被删时才需重新验证。
+<span class="k">-</span><span class="w"> </span>验证码若卡在 <span class="sb">`Please enter the graph check code JSON`</span>，把 <span class="sb">`graph_code_file`</span> 改成空串，重启后弹浏览器点选，比手动算坐标粘 JSON 简单得多。
+
+<span class="gu">## 二、Clash Verge Rev 分流配置</span>
+
+<span class="k">&gt; </span><span class="ge">原版 Clash Verge 已停维护、删了 prepend 功能；务必用 **Clash Verge Rev**（Mihomo 内核）。</span>
+
+<span class="gu">### 1. 全局扩展脚本（翻译 prepend-* 键，必须装）</span>
+位置：订阅页底部「全局扩展脚本」卡片 → Script。整段替换默认模板：
+<span class="sb">```javascript</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">main</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span><span class="w"> </span><span class="nx">profileName</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">key</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nx">config</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">ind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">key</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'-'</span><span class="p">);</span>
 <span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">ind</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1707,10 +1589,12 @@
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">config</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div>
-<p><strong>2. 全局扩展覆写配置</strong></p>
-<p>位置：订阅页底部「全局扩展覆写配置」卡片 → Merge。清空后粘贴：</p>
-<div class="highlight"><pre><span></span><code><span class="nt">prepend-proxies</span><span class="p">:</span>
+<span class="sb">```</span>
+
+<span class="gu">### 2. 全局扩展覆写配置</span>
+位置：订阅页底部「全局扩展覆写配置」卡片 → Merge。清空后粘贴：
+<span class="sb">```yaml</span>
+<span class="nt">prepend-proxies</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">"ZJU校内"</span>
 <span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">socks5</span>
 <span class="w">    </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">127.0.0.1</span>
@@ -1729,37 +1613,34 @@
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DOMAIN-SUFFIX,cc98.org,校内服务</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">IP-CIDR,10.0.0.0/8,校内服务</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">IP-CIDR,210.32.0.0/16,校内服务</span>
+<span class="sb">```</span>
+
+<span class="gu">### 3. 激活与选择</span>
+<span class="k">1.</span> 保存脚本 + 覆写配置后，在订阅页**重新点击激活机场 profile**（仅"更新订阅"不够）。
+<span class="k">2.</span> 代理页：「校内服务」选 <span class="sb">`ZJU校内`</span>，机场分组选一个节点。
+<span class="k">3.</span> 代理模式 = <span class="gs">**规则**</span>，开启系统代理。
+
+<span class="gu">## 三、常见坑</span>
+<span class="k">1.</span> <span class="gs">**看不到「校内服务」分组**</span>：没装全局扩展脚本，prepend 键没被翻译成真正配置。
+<span class="k">2.</span> <span class="gs">**验证码反复要输**</span>：改用浏览器方案（`graph_code_file` 留空）。
+<span class="k">3.</span> <span class="gs">**端口对不上**</span>：config 的 <span class="sb">`socks_bind`</span> 端口必须和 Clash 节点 <span class="sb">`port`</span> 一致。
+<span class="k">4.</span> <span class="gs">**套娃/连不上**</span>：必须加 <span class="sb">`vpn.zju.edu.cn → DIRECT`</span> 且放最前，否则 TUN 下 zju-connect 连服务器的流量被 Clash 又导回自己。
+<span class="k">5.</span> <span class="gs">**同账号只能 1 台设备在线**</span>：别处（手机 aTrust/EasyConnect）还挂着会互踢。
+
+<span class="gu">## 四、Windows 守护进程（开机自启 + 崩溃重启）</span>
+macOS 用 LaunchAgent；Windows 用「任务计划程序」做等价方案：
+<span class="k">1.</span> <span class="sb">`Win+R`</span> → 输入 <span class="sb">`taskschd.msc`</span> → 右侧「创建任务」（不是创建基本任务）。
+<span class="k">2.</span> 常规：名称 <span class="sb">`zju-connect`</span>；选「只在用户登录时运行」+「使用最高权限运行」。
+<span class="k">3.</span> 触发器：新建 →「登录时」。
+<span class="k">4.</span> 操作：新建 → 启动程序；程序填 <span class="sb">`zju-connect.exe`</span> 绝对路径，参数填 <span class="sb">`-config &lt;config.toml 绝对路径&gt;`</span>（务必用绝对路径）；**「起始于（可选）」务必填 zju-connect 目录**——不填则工作目录默认 System32，config 里相对路径的 <span class="sb">`clientData.json`</span> 找不到，任务报 <span class="sb">`0x8007042B`</span> 启动即退。
+<span class="k">5.</span> 条件：取消「只有在使用交流电时才启动此任务」（笔记本电池时也要跑）。
+<span class="k">6.</span> 设置：勾选「如果任务失败按以下频率重新启动」（1 分钟 / 999 次，等价 macOS 的 KeepAlive）+「如果请求后任务仍在运行则强行停止」。
+<span class="k">7.</span> 验证：右键任务→运行，确认 cc98 可访问后，**关闭手动开的前台窗口**（否则两个进程抢端口，且同一上网账号并发=1 会互踢）。
+
+<span class="gu">## 验证</span>
+<span class="k">-</span><span class="w"> </span>校网：`curl -x socks5://127.0.0.1:21080 -I http://cc98.org` 返回 301 即通。
+<span class="k">-</span><span class="w"> </span>浏览器访问 cc98.org（走校内）+ google.com（走机场）都正常即完成。
 </code></pre></div>
-<p><strong>3. 激活与选择</strong></p>
-<ol>
-<li>保存脚本 + 覆写配置后，在订阅页<strong>重新点击激活机场 profile</strong>（仅"更新订阅"不够）。</li>
-<li>代理页：「校内服务」选 <code>ZJU校内</code>，机场分组选一个节点。</li>
-<li>代理模式 = <strong>规则</strong>，开启系统代理。</li>
-</ol>
-<h3 id="_11">三、常见坑</h3>
-<ol>
-<li><strong>看不到「校内服务」分组</strong>：没装全局扩展脚本，prepend 键没被翻译成真正配置。</li>
-<li><strong>验证码反复要输</strong>：改用浏览器方案（<code>graph_code_file</code> 留空）。</li>
-<li><strong>端口对不上</strong>：config 的 <code>socks_bind</code> 端口必须和 Clash 节点 <code>port</code> 一致。</li>
-<li><strong>套娃/连不上</strong>：必须加 <code>vpn.zju.edu.cn → DIRECT</code> 且放最前，否则 TUN 下 zju-connect 连服务器的流量被 Clash 又导回自己。</li>
-<li><strong>同账号只能 1 台设备在线</strong>：别处（手机 aTrust/EasyConnect）还挂着会互踢。</li>
-</ol>
-<h3 id="windows">四、Windows 守护进程（开机自启 + 崩溃重启）</h3>
-<p>Windows 用「任务计划程序」做开机自启 + 崩溃重启：</p>
-<ol>
-<li><code>Win+R</code> → 输入 <code>taskschd.msc</code> → 右侧「创建任务」（不是创建基本任务）。</li>
-<li>常规：名称 <code>zju-connect</code>；选「只在用户登录时运行」+「使用最高权限运行」。</li>
-<li>触发器：新建 →「登录时」。</li>
-<li>操作：新建 → 启动程序；程序填 <code>zju-connect.exe</code> 绝对路径，参数填 <code>-config &lt;config.toml 绝对路径&gt;</code>（务必用绝对路径）；<strong>「起始于（可选）」务必填 zju-connect 目录</strong>——不填则工作目录默认 System32，config 里相对路径的 <code>clientData.json</code> 找不到，任务报 <code>0x8007042B</code> 启动即退。</li>
-<li>条件：取消「只有在使用交流电时才启动此任务」（笔记本电池时也要跑）。</li>
-<li>设置：勾选「如果任务失败按以下频率重新启动」（1 分钟 / 999 次）+「如果请求后任务仍在运行则强行停止」。</li>
-<li>验证：右键任务→运行，确认 cc98 可访问后，<strong>关闭手动开的前台窗口</strong>（否则两个进程抢端口，且同一上网账号并发=1 会互踢）。</li>
-</ol>
-<h3 id="_12">验证</h3>
-<ul>
-<li>校网：<code>curl -x socks5://127.0.0.1:21080 -I http://cc98.org</code> 返回 301 即通。</li>
-<li>浏览器访问 cc98.org（走校内）+ google.com（走机场）都正常即完成。</li>
-</ul>
 
 
 
