@@ -19,6 +19,10 @@
 !!! question "2026.8.24"
     - 将「Apex」删除，添加「资源」板块
 
+!!! question "2026.9.15"
+    - 增加「留言板」板块
+    - 站点绑定自定义域名
+
 ---
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
