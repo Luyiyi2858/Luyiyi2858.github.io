@@ -19,11 +19,11 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
-  - https://registry.npmmirror.com/katex/0.18.7/files/dist/katex.min.css
+  - javascripts/katex/katex.min.css
 
 extra_javascript:
-  - https://registry.npmmirror.com/katex/0.18.7/files/dist/katex.min.js
-  - https://registry.npmmirror.com/katex/0.18.7/files/dist/contrib/auto-render.min.js
+  - javascripts/katex/katex.min.js
+  - javascripts/katex/contrib/auto-render.min.js
   - javascripts/katex.js
 
 nav:
