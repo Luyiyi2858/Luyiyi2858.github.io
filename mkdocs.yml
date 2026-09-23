@@ -30,7 +30,7 @@ nav:
   - 主页: index.md
   - 课程:
       - 课程首页: course/index.md
-      - 材科基I: course/材科基I/晶体学部分.md
+      - 材科基I: course/材科基I/材料科学基础I.md
       - 示例文档: course/example.md
   - 资源:
       - 首页: resources/index.md
