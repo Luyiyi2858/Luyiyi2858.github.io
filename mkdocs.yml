@@ -14,14 +14,23 @@ markdown_extensions:
   - pymdownx.tilde:
       smart_delete: false
       subscript: false
+  - pymdownx.arithmatex:
+      generic: true
 
 extra_css:
   - stylesheets/extra.css
+  - https://registry.npmmirror.com/katex/0.18.7/files/dist/katex.min.css
+
+extra_javascript:
+  - https://registry.npmmirror.com/katex/0.18.7/files/dist/katex.min.js
+  - https://registry.npmmirror.com/katex/0.18.7/files/dist/contrib/auto-render.min.js
+  - javascripts/katex.js
 
 nav:
   - 主页: index.md
   - 课程:
       - 课程首页: course/index.md
+      - 材科基I: course/材科基I/晶体学部分.md
       - 示例文档: course/example.md
   - 资源:
       - 首页: resources/index.md
